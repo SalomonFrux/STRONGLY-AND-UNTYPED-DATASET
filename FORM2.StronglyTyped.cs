@@ -44,7 +44,7 @@ namespace StronglyTypeDataset
                 StudentDataSet.StudentsDataTable studentDatatable = (StudentDataSet.StudentsDataTable)Session["studentDatatable"];
                 
                 GridView1.DataSource = from Student in studentDatatable
-                                       where Student.Name.ToUpper().StartsWith(TextBox1.Text)
+                                       where Student.Name.ToUpper().StartsWith(TextBox1.Text.ToUpper())
                                        select new
                                        {
                                            Student.ID,
@@ -52,8 +52,9 @@ namespace StronglyTypeDataset
                                            Student.Gender,
                                            Student.TotalMarks
                                        };
-                GridView1.DataBind();....................................must check here
+                GridView1.DataBind();
             }
         }
     }
 }
+SOLVED
