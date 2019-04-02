@@ -8,3 +8,5 @@ Session["studentDatatable"] = studentDatatable;
                                            Student.TotalMarks
                                        };
                 GridView1.DataBind();
+                
+                
