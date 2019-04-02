@@ -62,7 +62,8 @@ namespace StronglyTypeDataset
                                            Gender = datarow["Gender"].ToString(),
                                            TotalMarks = (int)datarow["TotalMarks"]
                                        };
-                GridView1.DataBind();
+               
+               GridView1.DataBind();
             }
 
         }
